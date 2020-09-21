@@ -1,3 +1,11 @@
+# Pyenv
 env/
+
+# Byte-compiled
 __pycache__/
+
+### VS Code ###
 .vscode/
+
+# Unit test / coverage reports
+.coverage

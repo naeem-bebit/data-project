@@ -19,29 +19,29 @@
    FLASK_APP=src/app.py flask run
    ```
 
-Or
+   Or
 
-```
-python -m flask run
-```
+   ```
+   python -m flask run
+   ```
 
 1. Run tests
 
-Specify the folder `tests`
+   Specify the folder `tests`
 
-```bash
-python -m pytest tests
-```
+   ```bash
+   python -m pytest tests
+   ```
 
-Or
-It will look recurcisvely for the `test_*.py` files
+   Or
+   It will look recurcisvely for the `test_*.py` files
 
-```bash
-python -m pytest
-```
+   ```bash
+   python -m pytest
+   ```
 
-Or
+   Or
 
-```bash
-py.test -v
-```
+   ```bash
+   py.test -v
+   ```
