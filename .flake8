@@ -1,0 +1,13 @@
+[flake8]
+docstring-convention = google
+max-line-length = 120
+ignore =
+    # Following docstring error codes are ignored
+    # [Refs] http://www.pydocstyle.org/en/latest/error_codes.html
+    D100,D104,D105,D107,D201,D202,D205,D211,D413,D415,W503,W504,E203,E231,E902
+exclude =
+  .git,
+  .mypy_cache,
+  __pycache__,
+  lib
+  tests
