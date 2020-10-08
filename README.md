@@ -21,9 +21,17 @@
 
    Or
 
-   ```
+   ```bash
    python -m flask run
    ```
+
+   Or
+
+   ```bash
+   flask run
+   ```
+
+   The server will be up on `http://127.0.0.1:5000/`
 
 1. Run tests
 
@@ -45,3 +53,12 @@
    ```bash
    py.test -v
    ```
+
+1. Flake8 settings
+
+   `.flake8` used by Github Actions `.github/workflows/lint-test.yaml`
+
+## References
+
+- [Flask](https://github.com/pallets/flask)
+- [Black](https://github.com/psf/black)
