@@ -1,3 +1,5 @@
+![Python application](https://github.com/naeem-bebit/data-project/workflows/Python%20application/badge.svg)
+
 # Run flask locally
 
 1. Activate the virtual environment
