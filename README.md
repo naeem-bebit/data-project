@@ -60,6 +60,8 @@
 
    `.flake8` used by Github Actions `.github/workflows/lint-test.yaml`
 
+1. `pipreqs` for requirements
+
 ## References
 
 - [Flask](https://github.com/pallets/flask)
