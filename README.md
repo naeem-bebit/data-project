@@ -9,10 +9,28 @@
    source env/bin/activate
    ```
 
+   Or
+
+   ```bash
+   . env/bin/activate
+   ```
+
+1. To deactivate the virtual environment
+
+   ```bash
+   deactivate
+   ```
+
 1. Install requirements
 
    ```bash
    pip3 install -r requirements.txt
+   ```
+
+1. Setting up the flask development environment
+
+   ```bash
+   export FLASK_ENV=development
    ```
 
 1. Run app locally
