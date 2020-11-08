@@ -4,51 +4,51 @@
 
 1. Activate the virtual environment
 
-   ```bash
-   python3 -m venv env
-   source env/bin/activate
+   ```console
+   $ python3 -m venv env
+   $ source env/bin/activate
    ```
 
    Or
 
-   ```bash
-   . env/bin/activate
+   ```console
+   $ . env/bin/activate
    ```
 
 1. To deactivate the virtual environment
 
-   ```bash
-   deactivate
+   ```console
+   $ deactivate
    ```
 
 1. Install requirements
 
-   ```bash
-   pip3 install -r requirements.txt
+   ```console
+   $ pip3 install -r requirements.txt
    ```
 
 1. Setting up the flask development environment
 
-   ```bash
-   export FLASK_ENV=development
+   ```console
+   $ export FLASK_ENV=development
    ```
 
 1. Run app locally
 
-   ```bash
-   FLASK_APP=src/app.py flask run
+   ```console
+   $ FLASK_APP=src/app.py flask run
    ```
 
    Or
 
-   ```bash
-   python -m flask run
+   ```console
+   $ python -m flask run
    ```
 
    Or
 
-   ```bash
-   flask run
+   ```console
+   $ flask run
    ```
 
    The server will be up on `http://127.0.0.1:5000/`
@@ -57,21 +57,21 @@
 
    Specify the folder `tests`
 
-   ```bash
-   python -m pytest tests
+   ```console
+   $ python -m pytest tests
    ```
 
    Or
    It will look recurcisvely for the `test_*.py` files
 
-   ```bash
-   python -m pytest
+   ```console
+   $ python -m pytest
    ```
 
    Or
 
-   ```bash
-   py.test -v
+   ```console
+   $ py.test -v
    ```
 
 1. Flake8 settings
