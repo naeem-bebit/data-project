@@ -80,7 +80,29 @@
 
 1. `pipreqs` for requirements
 
+1. Docker build and docker run
+
+   ```console
+   docker build -t flask_app .
+   docker run flask_app
+   ```
+
+1. Check for Dockerfile Linter
+
+   ```console
+   docker run --rm -i hadolint/hadolint < Dockerfile
+   ```
+
+1. Docker debug
+   ```console
+   docker container prune # to remove existing containers.
+   docker-compose build --no-cache # to rebuild docker images.
+   docker-compose up --build --force-recreate
+   ```
+
 ## References
 
 - [Flask](https://github.com/pallets/flask)
 - [Black](https://github.com/psf/black)
+- [Dockerfile Linter](https://github.com/hadolint/hadolint)
+- [Docker Python](https://www.docker.com/blog/tag/python-env-series/)
