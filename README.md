@@ -83,8 +83,9 @@
 1. Docker build and docker run
 
    ```console
-   docker build -t flask_app .
+   docker build -t flask_app:v1 .
    docker run flask_app
+   docker container run -d -p 5000:5000 flask_app:v1
    ```
 
 1. Check for Dockerfile Linter
@@ -98,6 +99,9 @@
    docker container prune # to remove existing containers.
    docker-compose build --no-cache # to rebuild docker images.
    docker-compose up --build --force-recreate
+   docker stop $(docker ps -aq) # to stop all running dockers
+   docker ps # to list of all running dockers
+   docker run -p 5000:5000 docker_image # to run on port 5000
    ```
 
 ## References
