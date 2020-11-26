@@ -1,4 +1,11 @@
+"""Main."""
 from flask import Flask
+import logging
+
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
+file_handler = logging.FileHandler("test.log")
+logger.addHandler(file_handler)
 
 app = Flask(__name__)
 
