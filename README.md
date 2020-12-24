@@ -1,4 +1,4 @@
-![Python application](https://github.com/naeem-bebit/data-project/workflows/Python%20application/badge.svg)
+![Python application](https://github.com/naeem-bebit/data-project/workflows/Linter%20&%20test/badge.svg)
 
 # Run flask locally
 
