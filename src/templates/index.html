@@ -4,18 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="static/css/main.css" />
 </head>
 <body>
   <header>
     <nav>
       <ul>
-        <li>
-          {% for item in programming_languages %}
-            <p>{{ item }}</p>
-          {% endfor %}
-        </li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
       </ul>
     </nav>
+    {% for item in programming_languages %}
+      <p>{{ item }}</p>
+    {% endfor %}
   </header>
   <h1>{{ title }}</h1>
 
