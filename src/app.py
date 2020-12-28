@@ -13,12 +13,12 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     title = "Home Page"
-    programming_languages = [
-        "Python",
-        "Java",
-        "Javascript"
-    ]
-    return render_template('index.html', title=title, programming_languages=programming_languages)
+    return render_template('index.html', title=title)
+
+@app.route("/about")
+def about():
+    title = "About us"
+    return render_template('about.html', title=title)
 
 
 if __name__ == "__main__":

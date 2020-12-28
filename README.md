@@ -95,6 +95,7 @@
    ```
 
 1. Docker debug
+
    ```console
    docker container prune # to remove existing containers.
    docker-compose build --no-cache # to rebuild docker images.
@@ -102,6 +103,11 @@
    docker stop $(docker ps -aq) # to stop all running dockers
    docker ps # to list of all running dockers
    docker run -p 5000:5000 docker_image # to run on port 5000
+   ```
+
+1. Typescript setting
+   ```console
+   $ tsc main.ts --outFile ../js/main.js --watch
    ```
 
 ## References
