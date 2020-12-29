@@ -20,6 +20,10 @@ def about():
     title = "About us"
     return render_template('about.html', title=title)
 
+@app.route("/contact")
+def contact():
+    title = "Contact Us"
+    return render_template('contact.html', title=title)
 
 if __name__ == "__main__":
     app.run()
