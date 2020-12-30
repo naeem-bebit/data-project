@@ -17,8 +17,9 @@
     {% for item in programming_languages %}
       <p>{{ item }}</p>
     {% endfor %}
+    {% block content %}
+    {% endblock %}
   </header>
-  <h1>{{ title }}</h1>
   <script src="static/js/main.js"></script>
 </body>
 </html>
