@@ -106,8 +106,14 @@
    ```
 
 1. Typescript setting
+
    ```console
    $ tsc main.ts --outFile ../js/main.js --watch
+   ```
+
+1. Sass
+   ```console
+   $ sass --watch main.sass ../css/main.css
    ```
 
 ## References
