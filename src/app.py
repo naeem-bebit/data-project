@@ -13,7 +13,7 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     title = "Home Page"
-    return render_template('index.html', title=title)
+    return render_template('base.html', title=title)
 
 @app.route("/about")
 def about():
@@ -25,5 +25,10 @@ def contact():
     title = "Contact Us"
     return render_template('contact.html', title=title)
 
+@app.route("/lang/<name>")
+def lang(name):
+    title = name
+    return render_template('lang.html', title=title)
+
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
