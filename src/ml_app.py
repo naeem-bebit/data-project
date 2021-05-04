@@ -1,10 +1,9 @@
 from flask import Flask, render_template, url_for, request
-import pandas as pd
+# import pandas as pd
 import pickle
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
-from sklearn.externals import joblib
-
+import joblib
 
 app = Flask(__name__)
 
@@ -33,12 +32,18 @@ def predict():
     # Naive Bayes Classifier
     from sklearn.naive_bayes import MultinomialNB
 
-    clf = MultinomialNB()
-    clf.fit(X_train, y_train)
-    clf.score(X_test, y_test)
+    model_clf = MultinomialNB()
+    model_clf.fit(X_train, y_train)
+    print(model_clf.score(X_test, y_test))
     # Alternative Usage of Saved Model
-    # ytb_model = open("naivebayes_spam_model.pkl","rb")
-    # clf = joblib.load(ytb_model)
+    filename = 'model_clf.pkl'
+    joblib.dump(model_clf, filename)
+    
+    # some time later...
+    
+    # load the model from disk
+    loaded_model = joblib.load(filename) 
+    print("Loaded model: ",loaded_model.score(X_test, y_test))
 
     if request.method == "POST":
         comment = request.form["comment"]

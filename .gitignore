@@ -11,3 +11,4 @@ __pycache__/
 .coverage
 
 ./src/test.log
+test.log
