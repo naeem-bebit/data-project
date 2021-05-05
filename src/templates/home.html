@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<div id="brandname">
+			Natural Language Processing Prediction Demo
+		</div>
+		<!--<h2>Spam Detection For Youtube Comments</h2>-->
+
+	</div>
+	</header>
+
+	<div class="ml-container">
+
+		<form action="{{ url_for('predict')}}" method="POST">
+	    <p>This demo is to identify the authenticity of comments/statements on your site whether it is Spam or Not Spam</p>
+	    <p>Write a comment from your site onto the input space provided (white box) and click predict</p>
+		<p>Example: "Your video is awesome!" or "Please click this link"</p>
+		<!-- <input type="text" name="comment"/> -->
+		<textarea name="comment" rows="4" cols="50"></textarea>
+		<br/>
+
+		<input type="submit" class="btn-info" value="predict">
+
+	</form>
+
+	</div>
+
+
+
+
+</body>
+</html>
