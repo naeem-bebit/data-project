@@ -23,7 +23,7 @@ def about():
 @app.route("/contact")
 def contact():
     title = "Contact Us"
-    return render_template('contacta.html', title=title)
+    return render_template('contact.html', title=title)
 
 @app.route("/lang/<name>")
 def lang(name):
