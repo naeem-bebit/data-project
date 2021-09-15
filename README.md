@@ -31,11 +31,6 @@
 
    ```console
    $ export FLASK_ENV=development
-   ```
-   
-   Or
-
-   ```console
    $ export FLASK_APP=/src/app.py
    ```
 
