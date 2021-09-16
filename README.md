@@ -31,7 +31,7 @@
 
    ```console
    $ export FLASK_ENV=development
-   $ export FLASK_APP=/src/app.py
+   $ export FLASK_APP=/src/app.py #optional
    ```
 
 1. Run app locally
@@ -120,7 +120,9 @@
 ## References
 
 - [Flask](https://github.com/pallets/flask)
+- [Flask Quick Start](https://flask.palletsprojects.com/en/2.0.x/quickstart/)
 - [Black](https://github.com/psf/black)
 - [Dockerfile Linter](https://github.com/hadolint/hadolint)
 - [Docker Python](https://www.docker.com/blog/tag/python-env-series/)
 - [Pre-commit Github Actions](https://github.com/pre-commit/action)
+
