@@ -50,7 +50,11 @@ def predict():
         data = [comment]
         vect = cv.transform(data).toarray()
         my_prediction = loaded_model.predict(vect)
-    return render_template("result.html", prediction=my_prediction)
+        app.logger.info('%s predict successfully', my_prediction)
+        return render_template("result.html", prediction=my_prediction)
+    else:
+        app.logger.info('%s failed to predict', my_prediction)
+        abort(401)
 
 
 if __name__ == "__main__":
