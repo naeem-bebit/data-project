@@ -3,6 +3,11 @@
 # Run flask locally
 
 1. Activate the virtual environment
+   
+   Install virtualenv
+   ```console
+   $ pip install virtualenv
+   ```
 
    ```console
    $ python3 -m venv env
