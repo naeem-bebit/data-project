@@ -14,6 +14,20 @@
    ```console
    $ . env/bin/activate
    ```
+   
+   Windows (Command Prompt)
+   
+   ```console
+   $ env\Scripts\activate.bat
+   ```
+   
+   To check Python environment (Windows)
+   ```console
+   $  where python
+   C:\Users\..\..\env\Scripts\python.exe
+   C:\Users\..\AppData\Local\Programs\Python\Python310\python.exe
+   C:\Users\..\AppData\Local\Microsoft\WindowsApps\python.exe
+   ```
 
 1. To deactivate the virtual environment
 
