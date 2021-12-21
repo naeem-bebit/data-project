@@ -4,71 +4,91 @@
 
 1. Activate the virtual environment
    
-   Install virtualenv
+   Install virtualenv if not available
    ```console
-   $ pip install virtualenv
+   pip install virtualenv
    ```
 
    ```console
-   $ python3 -m venv env
-   $ source env/bin/activate
+   python3 -m venv env or python -m venv env
+   source env/bin/activate
    ```
 
    Or
 
    ```console
-   $ . env/bin/activate
+   . env/bin/activate
    ```
    
    Windows (Command Prompt)
    
    ```console
-   $ env\Scripts\activate.bat
+   env\Scripts\activate.bat
    ```
    
    To check Python environment (Windows)
    ```console
-   $  where python
+   where python
    C:\Users\..\..\env\Scripts\python.exe
    C:\Users\..\AppData\Local\Programs\Python\Python310\python.exe
    C:\Users\..\AppData\Local\Microsoft\WindowsApps\python.exe
+   ```
+      
+   To list all installed packages
+   ```console
+   pip list
+   ```
+
+1. To delete virtual environment
+   ```console
+   rmdir venv /s
    ```
 
 1. To deactivate the virtual environment
 
    ```console
-   $ deactivate
+   deactivate
    ```
 
 1. Install requirements
 
    ```console
-   $ pip3 install -r requirements.txt
+   pip3 install -r requirements.txt
+   ```
+   
+1. Get packages from main Python environment
+   ```console
+   python -m venv venv --system-site-packages
+   ```
+   
+   Check for local Python packages
+   ```console
+   pip list --local
    ```
 
 1. Setting up the flask development environment
 
    ```console
-   $ export FLASK_ENV=development
-   $ export FLASK_APP=/src/app.py #optional
+   export FLASK_ENV=development
+   export FLASK_APP=/src/app.py #optional
    ```
 
 1. Run app locally
 
    ```console
-   $ FLASK_APP=src/app.py flask run
+   FLASK_APP=src/app.py flask run
    ```
 
    Or
 
    ```console
-   $ python -m flask run
+   python -m flask run
    ```
 
    Or
 
    ```console
-   $ flask run
+   flask run
    ```
 
    The server will be up on `http://127.0.0.1:5000/`
@@ -78,20 +98,20 @@
    Specify the folder `tests`
 
    ```console
-   $ python -m pytest tests
+   python -m pytest tests
    ```
 
    Or
    It will look recurcisvely for the `test_*.py` files
 
    ```console
-   $ python -m pytest
+   python -m pytest
    ```
 
    Or
 
    ```console
-   $ py.test -v
+   py.test -v
    ```
 
 1. Flake8 settings
@@ -128,12 +148,12 @@
 1. Typescript setting
 
    ```console
-   $ tsc main.ts --outFile ../js/main.js --watch
+   tsc main.ts --outFile ../js/main.js --watch
    ```
 
 1. Sass
    ```console
-   $ sass --watch main.sass ../css/main.css
+   sass --watch main.sass ../css/main.css
    ```
 
 ## References
