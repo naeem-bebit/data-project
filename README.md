@@ -41,7 +41,7 @@
 
 1. To delete virtual environment
    ```console
-   rmdir venv /s
+   rmdir env /s
    ```
 
 1. To deactivate the virtual environment
@@ -58,7 +58,7 @@
    
 1. Get packages from main Python environment
    ```console
-   python -m venv venv --system-site-packages
+   python -m venv env --system-site-packages
    ```
    
    Check for local Python packages
