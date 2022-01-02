@@ -144,6 +144,17 @@
    docker ps # to list of all running dockers
    docker run -p 5000:5000 docker_image # to run on port 5000
    ```
+   
+1. Docker verify installation
+
+   ```console
+   docker run --name repo alpine/git clone https://github.com/docker/getting-started.git
+   cd getting-started
+   docker build -t docker101tutorial .
+   docker run -d -p 80:80 --name docker-tutorial docker101tutorial
+   docker tag docker101tutorial naeem15/docker101tutorial
+   docker push naeem15/docker101tutorial
+   ```
 
 1. Typescript setting
 
