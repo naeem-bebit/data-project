@@ -23,6 +23,8 @@
    Windows (Command Prompt)
    
    ```console
+   virtualenv myenv(name of the env)
+   myenv\Scripts\activate
    env\Scripts\activate.bat
    ```
    
