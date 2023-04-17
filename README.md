@@ -23,7 +23,7 @@
    Windows (Command Prompt)
    
    ```console
-   virtualenv myenv(name of the env)
+   virtualenv myenv  ##(name of the env)
    myenv\Scripts\activate
    env\Scripts\activate.bat
    ```
@@ -91,6 +91,7 @@
 
    ```console
    flask run
+   flask --app app(name of the file) run --debug #auto reload
    ```
 
    The server will be up on `http://127.0.0.1:5000/`
