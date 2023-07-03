@@ -179,3 +179,5 @@
 - [Docker Python](https://www.docker.com/blog/tag/python-env-series/)
 - [Pre-commit Github Actions](https://github.com/pre-commit/action)
 - [Django docker compose](https://docs.docker.com/samples/django/)
+- Hosting REST API Github(https://dev.to/myogeshchavan97/how-to-easily-create-and-host-your-own-rest-api-without-writing-a-single-line-of-code-2np4)
+  
