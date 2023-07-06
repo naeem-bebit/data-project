@@ -166,10 +166,18 @@
    ```
 
 1. Sass
+   
    ```console
    sass --watch main.sass ../css/main.css
    ```
 
+1. Conda (windows)
+
+   ```console
+   conda create --name env_name python=3.11
+   conda activate env_name
+   conda deactivate
+   ```
 ## References
 
 - [Flask](https://github.com/pallets/flask)
