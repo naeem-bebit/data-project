@@ -1,4 +1,6 @@
-![Python application](https://github.com/naeem-bebit/data-project/actions/workflows/lint-test.yaml/badge.svg)
+![](https://github.com/naeem-bebit/data-project/actions/workflows/lint-test.yaml/badge.svg)
+[![Python application](https://github.com/naeem-bebit/data-project/actions/workflows/lint-test.yaml/badge.svg)](https://github.com/naeem-bebit/data-project/actions/workflows/lint-test.yaml)
+
 
 # Run flask locally
 
